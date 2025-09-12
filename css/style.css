@@ -45,7 +45,7 @@ p {
 
 .navbar .navbar-logo .logo-space {
   display: block;
-  width: 48px;
+  width: 140px;
   height: 0;
 }
 
@@ -67,7 +67,6 @@ p {
   display: inline-block;
   margin: 0 0.5rem;
   width: 150px;
-  text-align: end;
 }
 .navbar .navbar-nav a:hover {
   color: var(--primariy--color-dark);
