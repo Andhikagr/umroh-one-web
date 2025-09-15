@@ -1,44 +1,24 @@
-const images = [
-  "assets/makkah.jpg",
-  "assets/madinah.jpg",
-  "assets/taif.jpg",
-  // tambah gambar lain
-];
+const navbarLinks = document.querySelector(".nav__drawer");
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+const overlay = document.querySelector("#overlay");
+const navClose = document.querySelector("#nav-close");
 
-let slideIndex = 0;
-const slideDiv = document.querySelector(".slide");
-const dotsContainer = document.querySelector(".dots");
-
-// buat dots otomatis
-images.forEach((_, i) => {
-  const dot = document.createElement("span");
-  dot.classList.add("dot");
-  dot.onclick = () => currentSlide(i);
-  dotsContainer.appendChild(dot);
+hamburgerMenu.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
+  overlay.classList.toggle("active");
+  hamburgerMenu.classList.toggle("hidden");
 });
 
-function showSlide(index) {
-  if (index >= images.length) slideIndex = 0;
-  if (index < 0) slideIndex = images.length - 1;
+overlay.addEventListener("click", () => {
+  navbarLinks.classList.remove("active");
+  overlay.classList.remove("active");
+  hamburgerMenu.classList.remove("hidden");
+});
 
-  slideDiv.style.backgroundImage = `url('${images[slideIndex]}')`;
-
-  // update dots
-  const dots = document.querySelectorAll(".dot");
-  dots.forEach((d) => d.classList.remove("active"));
-  dots[slideIndex].classList.add("active");
+if (navClose) {
+  navClose.addEventListener("click", () => {
+    navbarLinks.classList.remove("active");
+    overlay.classList.remove("active");
+    hamburgerMenu.classList.remove("hidden");
+  });
 }
-
-function currentSlide(n) {
-  slideIndex = n;
-  showSlide(slideIndex);
-}
-
-// otomatis setiap 5 detik
-setInterval(() => {
-  slideIndex++;
-  showSlide(slideIndex);
-}, 3000);
-
-// tampilkan slide pertama
-showSlide(slideIndex);

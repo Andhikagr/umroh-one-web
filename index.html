@@ -3,60 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-    </style>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <link rel="stylesheet" href="css/style.css" />
-
     <title>Askadigi Tour & Travel</title>
   </head>
   <body>
-    <!-- navbar start -->
-    <nav class="navbar">
-      <a href="" class="navbar-logo"
-        ><span class="logo-space"></span>
-        <img src="assets/logo.png" alt="" />
-      </a>
-
-      <div class="navbar-nav">
-        <a href="#home">Beranda</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#">Jadwal Umroh</a>
-        <a href="#paket"
-          >Paket Umroh <span><i class="ri-arrow-down-s-line"></i></span
-        ></a>
-        <a href="#">Haji Khusus</a>
-        <a href="#"
-          >Lainnya <span><i class="ri-arrow-down-s-line"></i></span
-        ></a>
+    <nav class="navbar__container" id="home">
+      <div class="logo nav__logo">
+        <a href=""><img src="assets/askadigi-logo.png" alt="logo" /></a>
       </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="search"><i class="ri-whatsapp-line"></i></a>
-        <a href="#" id="hamburger-menu"><i class="ri-menu-line"></i></a>
+      <div class="nav__drawer" id="nav-drawer">
+        <div class="drawer__header">
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+          <div class="drawer__logo">
+            <a href=""><img src="assets/askadigi-logo.png" alt="logo" /></a>
+          </div>
+        </div>
+        <ul class="nav__links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#">Jadwal Umroh</a></li>
+          <li>
+            <a href="#paket"
+              >Paket Umroh <span><i class="ri-arrow-down-s-line"></i></span>
+            </a>
+          </li>
+          <li><a href="#">Haji Khusus</a></li>
+          <li>
+            <a href="#"
+              >Lainnya <span><i class="ri-arrow-down-s-line"></i></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__btn">
+        <a href="#" id="wa">
+          <i class="ri-whatsapp-line"></i>
+        </a>
+        <a href="#" id="hamburger-menu">
+          <i class="ri-menu-line"></i>
+        </a>
       </div>
     </nav>
-    <!-- body / hero 1-->
-    <section class="hero-one">
-      <div class="slider">
-        <div class="slide"></div>
-        <!-- Dots -->
-        <div class="dots"></div>
-      </div>
+    <div id="overlay"></div>
+    <!-- body / hero-->
+    <section class="hero__container">
+      <div class="hero__image"></div>
     </section>
-
-    <!-- section 2 -->
-    <section id="about" class="about-container">
-      <div class="row">
-        <div class="text-column">
-          <h2 class="section-header">
+    <!-- section 1 -->
+    <section id="about" class="about__container">
+      <div class="about__box">
+        <div class="about__text">
+          <h2 class="section__header">
             Askadigi Tour Travel <span>Umroh dan Haji</span>
           </h2>
-          <p class="section-discription">
+          <p class="section__discription">
             Askadigi Tour, sebagai travel umroh yang baru dibentuk, menjalin
             kerja sama resmi dengan Saudi Tourism Authority untuk memperkenalkan
             dan mempromosikan pariwisata Saudi. Dengan dukungan ini, Askadigi
@@ -73,11 +82,11 @@
       </div>
     </section>
 
-    <!-- section 3 -->
+    <!-- section 2 -->
     <section id="paket" class="jadwal-container">
       <div class="container-jadwal">
-        <div class="text-jadwal">
-          <h2 class="section-header">Paket <span>Umroh</span></h2>
+        <div class="text__jadwal">
+          <h2 class="section-header">Paket Umroh<span> Askadigi Tour</span></h2>
           <p>
             Segera hubungi customer service kami untuk informasi lengkap tentang
             paket, harga, dan cara pemesanan. Tim kami siap membantu Anda dengan
@@ -213,135 +222,10 @@
               </div>
             </div>
           </div>
-          <div class="jadwal-card">
-            <img src="assets/flyer-3.png" alt="umroh" />
-            <div class="card-fill">
-              <h3 class="card-title">Umroh Premium</h3>
-              <p class="card-calender">
-                <i class="ri-calendar-2-line"></i> <span>Setiap Bulan</span>
-              </p>
-              <div class="card-row">
-                <p class="card-location">
-                  <i class="ri-hotel-line"></i><span>Madinah</span>
-                </p>
-                <div class="card-star">
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                </div>
-              </div>
-              <div class="card-row">
-                <p class="card-location">
-                  <i class="ri-hotel-line"></i><span>Makkah</span>
-                </p>
-                <div class="card-star">
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                  <p><i class="ri-star-fill"></i></p>
-                </div>
-              </div>
-              <hr class="card-divider" />
-              <div class="card-price-row">
-                <div class="price">
-                  <p class="card-price-title">Harga Mulai</p>
-                  <h1>
-                    <i class="ri-price-tag-3-line"></i><span> 35 Juta</span>
-                  </h1>
-                </div>
-                <button class="card-detail">Detail</button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- section 4 -->
-    <section class="reason-container">
-      <div class="reason-title">
-        <h1 class="section-header">
-          Alasan kenapa memilih <span>Askadigi Tour</span>
-        </h1>
-        <p>
-          Pengalaman Umroh yang Aman, Nyaman, dan Sesuai Sunnah. Bersama
-          Askadigi Tour, ibadah Anda menjadi lebih khusyuk dan berkesan.
-        </p>
-      </div>
-      <div class="reason-card">
-        <div class="reason-box-fill">
-          <p class="reason-icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Berizin Resmi & Terintegrasi Siskopatuh Kemenag</h4>
-          <p class="reason-description">
-            Memiliki izin PPIU & PIHK serta Terlindungi secara hukum dan diakui
-            pemerintah. Beribadah dengan rasa aman tanpa kekhawatiran.
-          </p>
-        </div>
-        <div class="reason-box-fill">
-          <p class="reason-icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Jaminan 100% Pasti Berangkat</h4>
-          <p class="reason-description">
-            Kami memastikan keberangkatan Anda dengan jadwal yang jelas dan
-            terpercaya, sehingga Anda tidak perlu khawatir
-          </p>
-        </div>
-        <div class="reason-box-fill">
-          <p class="reason-icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Direkomendasikan oleh Saudi Tourism Authority</h4>
-          <p class="reason-description">
-            ⁠Rekomendasi langsung dari Saudi Tourism Authority. Sebagai salah
-            satu travel umroh terbaik di Indonesia
-          </p>
-        </div>
-        <div class="reason-box-fill">
-          <p class="reason-icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Berpengalaman Sejak Tahun 1996</h4>
-          <p class="reason-description">
-            Alhamdulillah, selama puluhan tahun Askadigi Tour telah mengantarkan
-            puluhan ribu jamaah ke Tanah Suci.
-          </p>
-        </div>
-        <div class="reason-box-fill">
-          <p class="reason-icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Pembimbing Sesuai Sunah & Bersertifikasi</h4>
-          <p class="reason-description">
-            Perjalanan Umroh didampingi oleh Pembimbing Umroh (Muthawif) yang
-            berpengalaman dan tersertifikasi.
-          </p>
-        </div>
-        <div class="reason-box-fill">
-          <p class="reason-icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Telah Dipercaya Lebih Dari 25 Ribu Jamaah</h4>
-          <p class="reason-description">
-            Askadigi Tour Telah Memberangkatkan lebih dari 25 Ribu+ jamaah yang
-            tersebar diseluruh Indonesia dan Luar Negeri.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- section 5 -->
-    <section id="haji" class="haji-container">
-      <div class="haji-box">
-        <div class="haji-text">
-          <h1>
-            Askadigi Tour Telah memiliki Izin Haji Resmi, Kami Siap Melayani
-            Sebaik Mungkin.
-          </h1>
-          <p>
-            Alhamdulilah saat ini Askadigi Tour telah memiliki izin haji resmi,
-            untuk informasi paket Haji Plus/Khusus dari Askadigi Tour silahkan
-            hubungi Customer Service Askadigi Tour.
-          </p>
-        </div>
-        <div class="haji-image">
-          <img src="assets/haji.png" alt="" />
-        </div>
-      </div>
-    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
