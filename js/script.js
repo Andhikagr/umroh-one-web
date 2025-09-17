@@ -23,67 +23,6 @@ if (navClose) {
   });
 }
 
-// //scroll testimoni
-// const caraousel = document.querySelector(".testimoni__caraousel");
-// const firstCardWidth = caraousel.querySelector(".testimoni__card").offsetWidth;
-// const caraouselChildrens = [...caraousel.children];
-
-// const cardWidth = firstCardWidth + parseInt(getComputedStyle(caraousel).gap);
-
-// let isDragging = false,
-//   startX,
-//   startScrollLeft;
-
-// let cardPerView = Math.round(caraousel.offsetWidth / firstCardWidth);
-
-// caraouselChildrens
-//   .slice(-cardPerView)
-//   .reverse()
-//   .forEach((card) => {
-//     caraousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-//   });
-
-// caraouselChildrens.slice(0, cardPerView).forEach((card) => {
-//   caraousel.insertAdjacentHTML("beforeend", card.outerHTML);
-// });
-
-// const dragStart = (e) => {
-//   isDragging = true;
-//   caraousel.classList.add("dragging");
-//   startX = e.pageX;
-//   startScrollLeft = caraousel.scrollLeft;
-// };
-
-// const dragging = (e) => {
-//   if (!isDragging) return;
-//   const walk = (e.pageX - startX) * 2;
-//   caraousel.scrollLeft = startScrollLeft - walk;
-// };
-
-// const dragStop = () => {
-//   isDragging = false;
-//   caraousel.classList.remove("dragging");
-// };
-
-// const infiniteScroll = () => {
-//   if (caraousel.scrollLeft === 0) {
-//     caraousel.classList.add("no-transition");
-//     caraousel.scrollLeft = caraousel.scrollWidth - 2 * caraousel.offsetWidth;
-//     caraousel.classList.remove("no-transition");
-//   } else if (
-//     Math.ceil(caraousel.scrollLeft) ===
-//     caraousel.scrollWidth - caraousel.offsetWidth
-//   ) {
-//     caraousel.classList.add("no-transition");
-//     caraousel.scrollLeft = caraousel.offsetWidth;
-//     caraousel.classList.remove("no-transition");
-//   }
-// };
-
-// caraousel.addEventListener("mousedown", dragStart);
-// caraousel.addEventListener("mousemove", dragging);
-// document.addEventListener("mouseup", dragStop);
-// caraousel.addEventListener("scroll", infiniteScroll);
 const caraousel = document.querySelector(".testimoni__caraousel");
 const caraouselChildrens = [...caraousel.children];
 
