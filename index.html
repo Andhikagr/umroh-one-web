@@ -8,12 +8,13 @@
       rel="stylesheet"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
     <link rel="stylesheet" href="css/style.css" />
     <title>Askadigi Tour & Travel</title>
   </head>
   <body>
+    <!-- navbar start -->
     <nav class="navbar__container" id="home">
       <div class="logo nav__logo">
         <a href=""><img src="assets/askadigi-logo.png" alt="logo" /></a>
@@ -53,240 +54,386 @@
         </a>
       </div>
     </nav>
+    <!-- navbar end -->
     <div id="overlay"></div>
+    <!-- section hero -->
     <section class="hero__container">
-  <div class="hero__image">
-    <div class="hero__text">
-      <h1 class="hero__title">
-        Umroh dan Haji bersama <span>Askadigi Tour,</span>  insya Allah semua lebih mudah
-      </h1>
-      <p>Selalu Memberikan pelayanan Terbaik demi Keamanan & Kenyamanan ibadah Anda dan Keluarga.</p>
-    </div>
-  </div>
-  <div class="dots"></div> <!-- untuk navigasi dots -->
-</section>
-
-    <!-- section 1 -->
-    <section id="about" class="about__container">
-      <div class="about__box">
-        <div class="about__text">
-          <h2 class="section__header">
-            Askadigi Tour<span> Travel Umroh dan Haji</span>
-          </h2>
-          <p class="section__discription">
-            Askadigi Tour, sebagai travel umroh yang baru dibentuk, menjalin
-            kerja sama resmi dengan Saudi Tourism Authority untuk memperkenalkan
-            dan mempromosikan pariwisata Saudi. Dengan dukungan ini, Askadigi
-            Tour bertujuan tidak hanya memfasilitasi perjalanan ibadah umrah
-            bagi jamaah, tetapi juga memberikan kesempatan bagi wisatawan
-            non-umrah untuk menjelajahi kekayaan budaya, sejarah, dan destinasi
-            menarik di negeri Saudi, sehingga setiap perjalanan menjadi
-            pengalaman yang bermakna dan tak terlupakan.
+      <div class="hero__image">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Umroh dan Haji bersama <span>Askadigi Tour,</span> insya Allah semua
+            lebih mudah
+          </h1>
+          <p>
+            Selalu Memberikan pelayanan Terbaik demi Keamanan & Kenyamanan
+            ibadah Anda dan Keluarga
           </p>
         </div>
-        <div class="img-column">
-          <img src="assets/grup.jpg" alt="" />
-        </div>
       </div>
+      <div class="dots"></div>
     </section>
 
-    <!-- section 2 -->
-    <section id="paket" class="jadwal__container">
-      <div class="text__jadwal">
-        <h2 class="section__header">Paket Umroh<span> Askadigi Tour</span></h2>
-        <p>
-          Segera hubungi customer service kami untuk informasi lengkap tentang
-          paket, harga, dan cara pemesanan. Tim kami siap membantu Anda dengan
-          ramah dan cepat!
-        </p>
+    <!-- section 2 Paket-->
+    <section class="paket__container" id="paket">
+      <div class="paket__text">
+        <h2 class="txl__dark">Paket Umroh <span>Askadigi Tour</span></h2>
       </div>
-      <div class="jadwal__grid">
-        <div class="jadwal__card">
-          <img src="assets/flyer-1.png" alt="umroh" />
-          <div class="card__fill">
-            <h3 class="card__title">Umroh Hemat</h3>
-            <p class="card__calender">
-              <i class="ri-calendar-2-line"></i> <span>Setiap Bulan</span>
+      <div class="paket__box">
+        <div class="paket__card">
+          <div class="ibox__small">
+            <img src="assets/flyer-1.png" alt="umroh" />
+          </div>
+          <div class="paket__fill">
+            <div class="paket__title">
+              <h3 class="txl__dark">Umroh Hemat</h3>
+              <p class="tdxs__dark">
+                <i class="ri-calendar-2-line"></i>&nbsp;<span
+                  >Setiap Bulan</span
+                >
+              </p>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Makkah (Diyar Al Bait)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Madinah (Emaar Taiba)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="paket__plane">
+              <p class="tds__dark">
+                <i class="ri-flight-takeoff-line"></i>&nbsp;Saudia Airlines
+              </p>
+            </div>
+            <div class="paket__bandara">
+              <p class="tds__dark">
+                <i class="ri-map-pin-line"></i>&nbsp;Soekarno-Hatta
+                International Airport
+              </p>
+              <p class="tds__dark">Direct</p>
+            </div>
+            <p class="tds__dark">
+              <i class="ri-calendar-schedule-line"></i>&nbsp;9 Hari
             </p>
-            <div class="card__row__location">
-              <p class="card__location">
-                <i class="ri-hotel-line"></i><span>Madinah</span>
-              </p>
-              <div class="card__star">
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-              </div>
-            </div>
-            <div class="card__row__location">
-              <p class="card__location">
-                <i class="ri-hotel-line"></i><span>Makkah</span>
-              </p>
-              <div class="card__star">
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-              </div>
-            </div>
             <hr class="card__divider" />
-            <div class="card__price__row">
-              <div class="price">
-                <p class="card__price__title">Harga Mulai</p>
-                <h1>
-                  <i class="ri-price-tag-3-line"></i><span> 27 Juta</span>
-                </h1>
+            <div class="paket__price">
+              <div class="price__tag">
+                <p class="tds__dark">
+                  <i class="ri-price-tag-3-line"></i>&nbsp;Harga Mulai
+                </p>
+                <h2 class="txl__dark">Rp. 27 Juta</h2>
               </div>
-              <button class="card__detail">Detail</button>
+              <div class="price__btn">
+                <button>Detail</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="jadwal__card">
-          <img src="assets/flyer-2.png" alt="umroh" />
-          <div class="card__fill">
-            <h3 class="card__title">Umroh Reguler</h3>
-            <p class="card__calender">
-              <i class="ri-calendar-2-line"></i> <span>Setiap Bulan</span>
+        <div class="paket__card">
+          <div class="ibox__small">
+            <img src="assets/flyer-2.png" alt="umroh" />
+          </div>
+          <div class="paket__fill">
+            <div class="paket__title">
+              <h3 class="txl__dark">Umroh Reguler</h3>
+              <p class="tdxs__dark">
+                <i class="ri-calendar-2-line"></i>&nbsp;<span
+                  >Setiap Bulan</span
+                >
+              </p>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Makkah (Le Meridien Tower)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Madinah (Dar Al Naeem)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="paket__plane">
+              <p class="tds__dark">
+                <i class="ri-flight-takeoff-line"></i>&nbsp;Saudia Airlines
+              </p>
+            </div>
+            <div class="paket__bandara">
+              <p class="tds__dark">
+                <i class="ri-map-pin-line"></i>&nbsp;Soekarno-Hatta
+                International Airport
+              </p>
+              <p class="tds__dark">Direct</p>
+            </div>
+            <p class="tds__dark">
+              <i class="ri-calendar-schedule-line"></i>&nbsp;9 Hari
             </p>
-            <div class="card__row__location">
-              <p class="card__location">
-                <i class="ri-hotel-line"></i><span>Madinah</span>
-              </p>
-              <div class="card__star">
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-              </div>
-            </div>
-            <div class="card__row__location">
-              <p class="card__location">
-                <i class="ri-hotel-line"></i><span>Makkah</span>
-              </p>
-              <div class="card__star">
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-              </div>
-            </div>
             <hr class="card__divider" />
-            <div class="card__price__row">
-              <div class="price">
-                <p class="card__price__title">Harga Mulai</p>
-                <h1>
-                  <i class="ri-price-tag-3-line"></i><span> 31 Juta</span>
-                </h1>
+            <div class="paket__price">
+              <div class="price__tag">
+                <p class="tds__dark">
+                  <i class="ri-price-tag-3-line"></i>&nbsp;Harga Mulai
+                </p>
+                <h2 class="txl__dark">Rp. 31 Juta</h2>
               </div>
-              <button class="card__detail">Detail</button>
+              <div class="price__btn">
+                <button>Detail</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="jadwal__card">
-          <img src="assets/flyer-3.png" alt="umroh" />
-          <div class="card__fill">
-            <h3 class="card__title">Umroh Premium</h3>
-            <p class="card__calender">
-              <i class="ri-calendar-2-line"></i> <span>Setiap Bulan</span>
+        <div class="paket__card">
+          <div class="ibox__small">
+            <img src="assets/flyer-3.png" alt="umroh" />
+          </div>
+          <div class="paket__fill">
+            <div class="paket__title">
+              <h3 class="txl__dark">Umroh Reguler</h3>
+              <p class="tdxs__dark">
+                <i class="ri-calendar-2-line"></i>&nbsp;<span
+                  >Setiap Bulan</span
+                >
+              </p>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Makkah (Shohada)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Madinah (Concorde Al Khair)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="paket__plane">
+              <p class="tds__dark">
+                <i class="ri-flight-takeoff-line"></i>&nbsp;Saudia Airlines
+              </p>
+            </div>
+            <div class="paket__bandara">
+              <p class="tds__dark">
+                <i class="ri-map-pin-line"></i>&nbsp;Soekarno-Hatta
+                International Airport
+              </p>
+              <p class="tds__dark">Direct</p>
+            </div>
+            <p class="tds__dark">
+              <i class="ri-calendar-schedule-line"></i>&nbsp;9 Hari
             </p>
-            <div class="card__row__location">
-              <p class="card__location">
-                <i class="ri-hotel-line"></i><span>Madinah</span>
-              </p>
-              <div class="card__star">
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-              </div>
-            </div>
-            <div class="card__row__location">
-              <p class="card__location">
-                <i class="ri-hotel-line"></i><span>Makkah</span>
-              </p>
-              <div class="card__star">
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-                <p><i class="ri-star-fill"></i></p>
-              </div>
-            </div>
             <hr class="card__divider" />
-            <div class="card__price__row">
-              <div class="price">
-                <p class="card__price__title">Harga Mulai</p>
-                <h1>
-                  <i class="ri-price-tag-3-line"></i><span> 35 Juta</span>
-                </h1>
+            <div class="paket__price">
+              <div class="price__tag">
+                <p class="tds__dark">
+                  <i class="ri-price-tag-3-line"></i>&nbsp;Harga Mulai
+                </p>
+                <h2 class="txl__dark">Rp. 35 Juta</h2>
               </div>
-              <button class="card__detail">Detail</button>
+              <div class="price__btn">
+                <button>Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paket__card">
+          <div class="ibox__small">
+            <img src="assets/flyer-3.png" alt="umroh" />
+          </div>
+          <div class="paket__fill">
+            <div class="paket__title">
+              <h3 class="txl__dark">Umroh Exclusive</h3>
+              <p class="tdxs__dark">
+                <i class="ri-calendar-2-line"></i>&nbsp;<span
+                  >Setiap Bulan</span
+                >
+              </p>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Makkah (Pullman)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="item__paket">
+              <p class="tds__dark">
+                <i class="ri-hotel-line"></i>&nbsp;Madinah (Movenpick)
+              </p>
+              <div class="paket__star">
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+                <p><i class="ri-star-fill"></i></p>
+              </div>
+            </div>
+            <div class="paket__plane">
+              <p class="tds__dark">
+                <i class="ri-flight-takeoff-line"></i>&nbsp;Garuda Indonesia
+              </p>
+            </div>
+            <div class="paket__bandara">
+              <p class="tds__dark">
+                <i class="ri-map-pin-line"></i>&nbsp;Soekarno-Hatta
+                International Airport
+              </p>
+              <p class="tds__dark">Direct</p>
+            </div>
+            <p class="tds__dark">
+              <i class="ri-calendar-schedule-line"></i>&nbsp;14 Hari
+            </p>
+            <hr class="card__divider" />
+            <div class="paket__price">
+              <div class="price__tag">
+                <p class="tds__dark">
+                  <i class="ri-price-tag-3-line"></i>&nbsp;Harga Mulai
+                </p>
+                <h2 class="txl__dark">Rp. 45 Juta</h2>
+              </div>
+              <div class="price__btn">
+                <button>Detail</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="paket__btn">
-        <button>Lihat Paket Umroh</button>
+        <button>Lihat Jadwal Umroh</button>
       </div>
     </section>
 
     <!-- section 3 -->
+    <section id="about" class="about__container">
+      <div class="about__box">
+        <div class="about__text">
+          <h4 class="ts__dark">Kenali Kami Lebih Dekat</h4>
+          <h2 class="txl__dark">
+            <span>Askadigi Tour </span>
+            Travel Umroh dan Haji
+          </h2>
+          <p class="td__dark">
+            Sejak tahun 2017, Askadigi Tour hadir dengan satu niat mulia yaitu
+            membantu mewujudkan impian umat untuk menunaikan ibadah Umrah dengan
+            nyaman dan tenang. Kami menyediakan paket Umrah lengkap yang
+            dirancang menyeluruh, mulai dari akomodasi hingga pilihan hotel
+            terbaik di Makkah dan Madinah.
+          </p>
+          <p class="td__dark">
+            Bagi kami, perjalanan Umrah bukan sekadar sebuah paket perjalanan,
+            melainkan sebuah kisah spiritual yang istimewa. Karena itu, setiap
+            layanan kami disusun secara personal agar lebih mudah dijangkau,
+            terjangkau, dan penuh makna. Didukung oleh inovasi digital, Askadigi
+            Tour berkomitmen memberikan pengalaman ibadah yang praktis, aman,
+            dan tak terlupakan bagi setiap jamaah.
+          </p>
+          <p class="td__dark">
+            "Biarkan Kami Membawamu Ke Sana!" – adalah janji kami, untuk tidak
+            hanya mengantarkan perjalanan, tetapi juga menemani setiap langkah
+            ibadah Anda menjadi kisah penuh inspirasi
+          </p>
+        </div>
+        <div class="ibox__medium">
+          <img src="assets/grup.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- section 4 -->
     <section class="reason__container">
       <div class="reason__title">
-        <h1 class="section__header">
-          Alasan kenapa memilih <span>Askadigi Tour</span>
-        </h1>
-        <p>
+        <h2 class="txl__dark">Kenapa memilih <span>Askadigi Tour</span></h2>
+        <p class="ts__dark">
           Pengalaman Umroh yang Aman, Nyaman, dan Sesuai Sunnah. Bersama
           Askadigi Tour, ibadah Anda menjadi lebih khusyuk dan berkesan.
         </p>
       </div>
       <div class="reason__card">
         <div class="reason__box__fill">
-          <p class="reason__icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Berizin Resmi & Terintegrasi Siskopatuh Kemenag</h4>
-          <p class="reason__description">
+          <p class="reason__icon"><i class="ri-shield-check-fill"></i></p>
+          <h4 class="txl__dark">
+            Berizin Resmi & Terintegrasi Siskopatuh Kemenag
+          </h4>
+          <p class="td__medium">
             Memiliki izin PPIU & PIHK serta Terlindungi secara hukum dan diakui
             pemerintah. Beribadah dengan rasa aman tanpa kekhawatiran.
           </p>
         </div>
         <div class="reason__box__fill">
-          <p class="reason__icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Jaminan 100% Pasti Berangkat</h4>
-          <p class="reason__description">
+          <p class="reason__icon"><i class="ri-plane-fill"></i></p>
+          <h4 class="txl__dark">Jaminan 100% Pasti Berangkat</h4>
+          <p class="td__medium">
             Kami memastikan keberangkatan Anda dengan jadwal yang jelas dan
             terpercaya, sehingga Anda tidak perlu khawatir
           </p>
         </div>
         <div class="reason__box__fill">
-          <p class="reason__icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Direkomendasikan oleh Saudi Tourism Authority</h4>
-          <p class="reason__description">
+          <p class="reason__icon"><i class="ri-thumb-up-line"></i></p>
+          <h4 class="txl__dark">
+            Direkomendasikan oleh Saudi Tourism Authority
+          </h4>
+          <p class="td__medium">
             ⁠Rekomendasi langsung dari Saudi Tourism Authority. Sebagai salah
             satu travel umroh terbaik di Indonesia
           </p>
         </div>
         <div class="reason__box__fill">
-          <p class="reason__icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Berpengalaman Sejak Tahun 1996</h4>
-          <p class="reason__description">
+          <p class="reason__icon"><i class="ri-history-fill"></i></p>
+          <h4 class="txl__dark">Berpengalaman Sejak Tahun 1996</h4>
+          <p class="td__medium">
             Alhamdulillah, selama puluhan tahun Askadigi Tour telah mengantarkan
             puluhan ribu jamaah ke Tanah Suci.
           </p>
         </div>
         <div class="reason__box__fill">
-          <p class="reason__icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Pembimbing Sesuai Sunah & Bersertifikasi</h4>
-          <p class="reason__description">
+          <p class="reason__icon"><i class="ri-user-star-fill"></i></p>
+          <h4 class="txl__dark">Pembimbing Sesuai Sunah & Bersertifikasi</h4>
+          <p class="td__medium">
             Perjalanan Umroh didampingi oleh Pembimbing Umroh (Muthawif) yang
             berpengalaman dan tersertifikasi.
           </p>
         </div>
         <div class="reason__box__fill">
-          <p class="reason__icon"><i class="ri-checkbox-fill"></i></p>
-          <h4>Telah Dipercaya Lebih Dari 25 Ribu Jamaah</h4>
-          <p class="reason__description">
+          <p class="reason__icon"><i class="ri-team-fill"></i></p>
+          <h4 class="txl__dark">Telah Dipercaya Lebih Dari 25 Ribu Jamaah</h4>
+          <p class="td__medium">
             Askadigi Tour Telah Memberangkatkan lebih dari 25 Ribu+ jamaah yang
             tersebar diseluruh Indonesia dan Luar Negeri.
           </p>
@@ -295,7 +442,7 @@
     </section>
 
     <!-- section 4 -->
-    <section id="haji" class="haji__container">
+    <!-- <section id="haji" class="haji__container">
       <div class="haji__box">
         <div class="haji__text">
           <h1 class="section__title">
@@ -318,13 +465,13 @@
           <img src="assets/haji.png" alt="" />
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- section 5 -->
     <section class="testimoni__container">
       <div class="testimoni__text">
-        <h1 class="section__header">Testimoni <span>Jamaah Umroh </span></h1>
-        <p>
+        <h2 class="txl__light">Testimoni <span>Jamaah Umroh </span></h2>
+        <p class="ts__light">
           Rasakan pengalaman ibadah umroh yang aman dan nyaman bersama Travel
           Umroh Askadigi Tour.
         </p>
@@ -362,33 +509,53 @@
     <!-- section 6 -->
     <section class="dokumentasi__container">
       <div class="dokumentasi__text">
-        <h1 class="section__title">
+        <h2 class="txl__dark">
           Dokumentasi Jamaah Umroh <span>Askadigi Tour</span>
-        </h1>
-        <p>
+        </h2>
+        <p class="ts__dark">
           Dapatkan promo potongan harga menarik untuk perjalanan ibadah umroh
           sahabat semua.
         </p>
       </div>
-      <div class="video__container">
-        <iframe
-          src="https://www.youtube.com/embed/Y145ThHXGys"
-          title="Youtube Video Player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="dokumentasi__video">
+        <div class="video__container">
+          <iframe
+            src="https://www.youtube.com/embed/Y145ThHXGys"
+            title="Youtube Video Player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video__container">
+          <iframe
+            src="https://www.youtube.com/embed/Y145ThHXGys"
+            title="Youtube Video Player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video__container">
+          <iframe
+            src="https://www.youtube.com/embed/Y145ThHXGys"
+            title="Youtube Video Player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video__container">
+          <iframe
+            src="https://www.youtube.com/embed/Y145ThHXGys"
+            title="Youtube Video Player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
 
     <!-- section 7 -->
     <section class="artikel__container">
-      <div class="section__header">
-        <h4>Artikel Seputar <span>Umroh dan Haji</span></h4>
-        <p class="section__discription">
-          Askadigi Tour menyediakan banyak pilihan paket umroh sesuai kebutuhan
-          Anda dan Keluarga.
-        </p>
-      </div>
+      <h2 class="txl__dark">Artikel Seputar <span>Umroh dan Haji</span></h2>
       <div class="artikel__card">
         <div class="artikel__box">
           <img src="assets/makkah-2.jpg" alt="image" />
@@ -498,20 +665,18 @@
     <!-- section 9 -->
     <section class="info__container">
       <div class="info__text">
-        <h4 class="section__title">
+        <p class="ts__light">
           Dapatkan Info Terbaru<span> Askadigi Tour </span>
-        </h4>
+        </p>
 
         <form action="" method="POST" enctype="text/plain">
           <input type="text" placeholder="Masukkan email" />
-          <button type="submit">
-            Kirim
-          </button>
+          <button type="submit">Kirim</button>
         </form>
       </div>
       <div class="social__container">
-        <h4 class="section__title">Social Media</h4>
-        <p>
+        <p class="ts__light">Social Media</p>
+        <p class="tds__light">
           Jangan lewatkan informasi lainnya di sosial media
           <span> Askadigi Tour</span>
         </p>
@@ -523,49 +688,57 @@
             <a href="#"><img src="assets/fb.png" alt="" /></a>
           </div>
           <div class="social__icon">
-            <a href="#"><img src="assets/twitter.png" alt=""></a>
+            <a href="#"><img src="assets/twitter.png" alt="" /></a>
           </div>
           <div class="social__icon">
-            <a href="#"><img src="assets/youtube.png" alt=""></i></a>
+            <a href="#"><img src="assets/youtube.png" alt="" /></a>
           </div>
           <div class="social__icon">
-            <a href="#"><img src="assets/tiktok.png" alt=""></i></a>
+            <a href="#"><img src="assets/tiktok.png" alt="" /></a>
           </div>
         </div>
       </div>
     </section>
     <!-- section 10 -->
-     <section class="address__section">
+    <section class="address__section">
       <div class="alamat">
-        <h4 class="section__title">Alamat Kami</h4>
-        <p>Jl. Raya Merdeka, Kel. Pahlawan, Banjarnegara, Jawa Tengah, Indonesia, 53472</p>
-        <p><i class="ri-customer-service-line"></i> <span>12345</span> Call Center</p>
-        <p><i class="ri-whatsapp-line"></i><span> 123456789</span> WA Only</p>
-        <p><i class="ri-mail-line"></i><span> admin@askadigitour.com</span></p>
+        <h4 class="ts__light">Alamat Kami</h4>
+        <p class="tds__light">
+          Jl. Raya Merdeka, Kel. Pahlawan, Banjarnegara, Jawa Tengah, Indonesia,
+          53472
+        </p>
+        <p class="tds__light">
+          <i class="ri-customer-service-line"></i> <span>12345</span> Call
+          Center
+        </p>
+        <p class="tds__light">
+          <i class="ri-whatsapp-line"></i><span> 123456789</span> WA Only
+        </p>
+        <p class="tds__light">
+          <i class="ri-mail-line"></i><span> admin@askadigitour.com</span>
+        </p>
       </div>
       <div class="informasi">
-        <h4 class="section__title">Informasi</h4>
-        <p>Metode Pembayaran</p>
-        <p>Syarat Ketentuan</p>
-        <p>Kebijakan Privasi</p>
-        <p>Artikel</p>
+        <h4 class="ts__light">Informasi</h4>
+        <p class="tds__light">Metode Pembayaran</p>
+        <p class="tds__light">Syarat Ketentuan</p>
+        <p class="tds__light">Kebijakan Privasi</p>
+        <p class="tds__light">Artikel</p>
       </div>
       <div class="layanan">
-        <h4 class="section__title">Layanan</h4>
-        <p>Layanan Paket Haji</p>
-        <p>Layanan Paket Umroh</p>
+        <h4 class="ts__light">Layanan</h4>
+        <p class="tds__light">Layanan Paket Haji</p>
+        <p class="tds__light">Layanan Paket Umroh</p>
       </div>
       <div class="jam">
-        <h4 class="section__title">Jam Operasional</h4>
-        <p>Waktu Operasional</p>
-        <p>Senin - Ahad Jam 09.00 - 18.00</p>
+        <h4 class="ts__light">Jam Operasional</h4>
+        <p class="tds__light">Waktu Operasional</p>
+        <p class="tds__light">Senin - Ahad Jam 09.00 - 18.00</p>
       </div>
-     </section>
+    </section>
     <footer class="footer">
-          <p>&copy; 2025 Andhikagr. All rights reserved.</p>
-        </footer>
-</footer>
-
+      <p>&copy; 2025 Andhikagr. All rights reserved.</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
